@@ -4,6 +4,7 @@
     #wrapper {
         grid-template-columns: 1fr 1fr;
     }
+    
 }
 
 
@@ -11,4 +12,10 @@
     #wrapper {
         grid-template-columns: repeat(3, 1fr);
     }
+    
+    .welcome {    
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-template-rows: 1fr;
+        }
 }
