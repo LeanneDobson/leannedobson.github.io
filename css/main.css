@@ -26,9 +26,16 @@ body {
 
 
 .welcome {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 500; 
-    margin-bottom: 3em;
+    margin-bottom: 3em;    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-rows: 1fr;
+}
+
+.welcome h1 {
+    line-height: 1em;
 }
 
 .welcome p {
