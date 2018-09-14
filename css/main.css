@@ -29,9 +29,7 @@ body {
     font-size: 1.5em;
     font-weight: 500; 
     margin-bottom: 3em;    
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-template-rows: 1fr;
+    grid-column: 1 / span 1;
 }
 
 .welcome h1 {
@@ -193,6 +191,7 @@ nav li a:before {
     background-size: cover;
     background-position: center center;
 }
+
 
 
 /* Misc */
