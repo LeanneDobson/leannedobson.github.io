@@ -85,7 +85,7 @@ header {
 
 .welcome p {
 	font-weight: 300;
-	line-height: 30px;
+	line-height: 1.6em;
 	margin-bottom: 36px;
 	max-width: 70%;
 }
