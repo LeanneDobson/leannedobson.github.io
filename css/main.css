@@ -13,6 +13,16 @@ body {
 }
 
 
+
+a {
+	color: #cc3914;	
+}
+
+a:hover, #banner a:hover {
+	color: #d64a73;
+}
+
+
 /* Header */
 
 .logo {
@@ -32,7 +42,7 @@ header {
 #banner {
     width:90%;
     max-width: 1240px;
-    min-height: 500px;
+    min-height: 550px;
     height: auto;
     margin: 0 auto;
     display: grid;
@@ -41,31 +51,50 @@ header {
 
 #banner a {
     color: #fff;
+    content: '';
+    border-bottom: 1px solid rgba(255,255,255,1);
 }
 
 .welcome {
     font-size: 1.5em;
-    font-weight: 500; 
     margin-bottom: 3em;    
     grid-column: 1 / -1;
     grid-row-start: 1;
     margin-top: 10vh;
 }
 
+
 .welcome h1 {
-    line-height: 1em;
+	color: #fff;
+	font-family: 'Merriweather Sans';
+	font-size: 66px;
+	font-weight: 800;
+	 line-height: 1em;
+	letter-spacing: -4px;
+	margin-bottom: 72px;
+}
+
+.welcome h1:after {
+	background: #d64a73;
+	content: '';
+	display: block;
+	height: 12px;
+	margin: 43px 0;
+	width: 80px;
 }
 
 .welcome p {
-    line-height: 1.5em;
-    font-size: .9em;
-    font-weight: 300;
-     max-width: 70%;
+	font-weight: 300;
+	line-height: 30px;
+	margin-bottom: 36px;
+	max-width: 70%;
 }
 
 
-.underline {
-    border-bottom: 1px solid rgba(214,74,115,1);
+
+#banner a:hover {
+    content: '';
+     border-bottom: 1px solid #d64a73;
 }
 
 
@@ -84,10 +113,11 @@ header {
 
 
 .prompt {
-   font-family: 'Indie Flower', cursive;
+    font-family: 'Indie Flower', cursive;
     font-size: 1.5em;
     grid-column: 2 / 3;
-    grid-row: 2;
+    grid-row: 1;
+    margin-top: 2.5em;
 }
 
 .prompt:before {
@@ -149,24 +179,6 @@ nav li a:hover:before {
     transform: scaleX(1);
 }
 
-nav li a:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(19,176,165,1);
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-}
-
-.navbar-right {
-    
-}
 
 /* Cards */
 
