@@ -12,28 +12,16 @@ body {
   color: #111;
 }
 
-
-
-a {
-	color: #cc3914;	
-}
-
-a:hover, #banner a:hover {
-	color: #d64a73;
-}
-
-
 /* Header */
 
 .logo {
-    height: 40px;
-    margin-left: 25px;
-    float: left;
+   height: 50px;
 }
 
 header {
-   background-color: rgba(56,55,56,1); 
-    color: #fff;
+   background-color: #ef3340; 
+   color: #fff;
+   min-height: 100vh;
 }
 
 
@@ -42,7 +30,6 @@ header {
 #banner {
     width:90%;
     max-width: 1240px;
-    min-height: 550px;
     height: auto;
     margin: 0 auto;
     display: grid;
@@ -50,13 +37,18 @@ header {
 }
 
 #banner a {
-    color: #fff;
+    color: rgba(255, 255, 255, 1);
     content: '';
-    border-bottom: 1px solid rgba(255,255,255,1);
+    transition: all 0.2s linear;
+    font-weight: 500;
+}
+
+#banner a:hover {
+    color: rgba(255, 255, 255, .6);
+    border-bottom: 1px solid rgba(255,255,255,.6);
 }
 
 .welcome {
-    font-size: 1.2em;
     margin-bottom: 3em;    
     grid-column: 1 / -1;
     grid-row-start: 1;
@@ -66,181 +58,44 @@ header {
 
 .welcome h1 {
 	color: #fff;
-	font-family: 'Merriweather Sans';
-    font-size: 2.5em;
+    font-size: 4em;
 	font-weight: 800;
-	line-height: 1.2em;
+	line-height: 1em;
 	letter-spacing: -3px;
 	margin-bottom: 72px;
 }
 
-.welcome h1:after {
-	background: #d64a73;
-	content: '';
-	display: block;
-	height: 12px;
-	margin: 43px 0;
-	width: 80px;
-}
 
 .welcome p {
+    font-size: 1.3em;
 	font-weight: 300;
 	line-height: 1.6em;
 	margin-bottom: 36px;
 	max-width: 500px;
+    color: rgba(255, 255, 255, .8);
 }
-
-
-
-#banner a:hover {
-    content: '';
-     border-bottom: 1px solid #d64a73;
-}
-
-
-.justifier {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-
-.wrap {
-    display: flex;
-    margin: 0 auto;
-    max-width: 1240px;
-}
-
-.scroll {
-    width: 80px;
-    height: 80px;    
-    grid-column: 2 / 3;
-    grid-row: 4;
-}
-
-.prompt {display:none;}
-
-/* Navigation */
-
-nav {
-    display: flex;
-    align-items: center;   
-    background-color: rgba(56,55,56,1); 
-}
-
-.nav-placeholder {
-    margin:0 auto;    
-}
-
-
-/* Navigation - sticky nav */
-
-.fixed {
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:170;       
-}
-
-
-nav li {  
-   display: inline-block;
-   margin: 0 1em;
-}
-
-
-nav a {
-    text-decoration: none;
-    color: #fff;
-}
-
-
-nav li a:hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-}
-
-
-/* Cards */
-
-#wrapper {
-    width:90%;
-    max-width: 1240px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr auto;
-    grid-gap: 20px;
-    padding: 65px 0 35px 0;
-}
-
-
-.card {
-    background: #fff;
-    text-decoration: none;
-    color: #444;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    position: relative;
-    top: 0;
-    transition: all .1s ease-in;
-}
-
-.card:hover {
-    top: -2px;
-    box-shadow: 0 4px 5px rgba(0,0,0,0.2);
-    color: #111;
-}
-
-/* Cards - Date */
-
-.card article {
-    padding: 20px;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-
-/* Cards - Typography */
-
-.card h1 {
-    font-size: 1.7em;
-    margin: 0;
-    color: #333;
-}
-
-.card p { 
-  flex: 1; /* make p grow to fill available space*/
-  line-height: 1.4;
-}
-
-
-.card span {
-    font-size: .8em;
-    font-weight: 500;
-    color: #999;
-    text-transform: uppercase;
-    letter-spacing: .05em;
-    margin: 2em 0;
-}
-
-
-/* Cards - Images */
-
-.card .thumb {
-    padding-bottom: 60%;
-    background-size: cover;
-    background-position: center center;
-}
-
 
 
 /* Misc */
+
+
+button {
+    background-color: #fff;
+    color: #ef3340;
+    border: #666;
+    padding: 1.5em 2.5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 50px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+button:active, button:hover {
+    outline: none;
+    border: none;
+}
 
 img {
     max-width: 100%;
