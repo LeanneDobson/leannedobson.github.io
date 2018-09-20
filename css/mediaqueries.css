@@ -11,6 +11,7 @@
     
     .welcome h1 {
     	font-size: 6.5em;
+        letter-spacing: -3px;
     }
     
     .welcome p {
