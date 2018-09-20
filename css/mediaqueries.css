@@ -5,6 +5,14 @@
         grid-template-columns: 1fr 1fr;
     } 
     
+      #banner {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .prompt {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
 }
 
 
@@ -12,6 +20,18 @@
     #wrapper {
         grid-template-columns: repeat(3, 1fr);
         padding: 35px 0;
+    }
+    
+    .welcome {
+        font-size: 1.5em;
+    }
+    
+    .welcome h1 {
+    	font-size: 66px;
+    }
+    
+    .welcome p {
+        max-width: 700px;
     }
     
 }

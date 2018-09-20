@@ -46,7 +46,7 @@ header {
     height: auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 #banner a {
@@ -56,18 +56,19 @@ header {
 }
 
 .welcome {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-bottom: 3em;    
     grid-column: 1 / -1;
     grid-row-start: 1;
-    margin-top: 10vh;
+    margin-top: 6vh;
 }
 
 
 .welcome h1 {
 	color: #fff;
 	font-family: 'Merriweather Sans';
-	font-size: 66px;
+    font-size: 2.5em;
+	/*font-size: 66px;*/
 	font-weight: 800;
 	 line-height: 1em;
 	letter-spacing: -4px;
@@ -87,7 +88,7 @@ header {
 	font-weight: 300;
 	line-height: 1.6em;
 	margin-bottom: 36px;
-	max-width: 70%;
+	max-width: 500px;
 }
 
 
@@ -115,9 +116,7 @@ header {
 .prompt {
     font-family: 'Indie Flower', cursive;
     font-size: 1.5em;
-    grid-column: 2 / 3;
-    grid-row: 1;
-    margin-top: 2.5em;
+    margin-top: 1em;
 }
 
 .prompt:before {
