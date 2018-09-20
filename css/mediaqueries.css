@@ -34,4 +34,22 @@
         max-width: 700px;
     }
     
+    .prompt {
+        display: block;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1.5em;
+        margin-top: 1em;
+    }
+
+    .prompt:before {
+        content: "";
+        position: absolute;
+        background: url(../images/icons/curved_arrow.svg) no-repeat;
+        width: 50px;
+        height: 50px;
+        margin-top: 1.3em;
+        bottom: 5;
+        height: 100;
+    }
+    
 }
