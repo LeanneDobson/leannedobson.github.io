@@ -41,11 +41,12 @@ header {
     content: '';
     transition: all 0.2s linear;
     font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,.6);
 }
 
 #banner a:hover {
     color: rgba(255, 255, 255, .6);
-    border-bottom: 1px solid rgba(255,255,255,.6);
+    border-bottom: 1px solid rgba(255,255,255,.8);
 }
 
 .welcome {
