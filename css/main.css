@@ -93,7 +93,7 @@ button {
     cursor: pointer;
 }
 
-button:active, button:hover {
+button:active, button:hover, button:focus {
     outline: none;
     border: none;
 }
